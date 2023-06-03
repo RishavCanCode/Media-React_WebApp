@@ -1,0 +1,71 @@
+#testimonials .content-container{
+    margin-top: 50px;
+}
+
+#testimonials .testimonial {
+    width: 264px;
+}
+
+#testimonials .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+#testimonials .testimonial .name{
+    font-family: 'Alegreya',serif;
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+margin-top: 16px;
+}
+
+#testimonials .testimonial .course-name{
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 6px 0;
+    opacity: 0.5;
+}
+
+#testimonials .testimonial:hover {
+    transform : scale(1.04);
+}
+
+#testimonials .testimonial .review{
+    font-family: 'Alegreya',serif;
+font-weight: 400;
+font-size: 16px;
+line-height: 22px;
+margin-top: 4px;
+}
+
+/*tablets*/
+
+@media (max-width: 1040px){
+    #testimonials .content-container{
+       flex-direction: column; 
+       gap: 50px;
+       margin-left: 20px;
+       margin-top: 50px;
+    }
+    #testimonials .testimonial{
+        display: flex;
+        gap:28px;
+        width: 100%;
+    }
+
+  }
+
+  /*smartphones*/
+
+  @media (max-width: 720px){
+    #testimonials .content-container{
+       flex-direction: column; 
+       align-items: center;
+       gap: 16px;
+    }
+    #testimonials .testimonial .reviewer-details{
+        align-items: center;
+    }
+
+  }
